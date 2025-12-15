@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  firstName: "Shota",
+  lastName: "Suzuki",
+  name: `Shota Suzuki`,
+  role: "Senior Software Engineer",
+  avatar: "/images/avatar.png",
+  email: "s.shota13@outlook.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -19,33 +19,6 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
-  },
   {
     name: "Email",
     icon: "email",
@@ -85,7 +58,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -95,16 +68,14 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendly.com/s-shota13/30min",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Full-Stack Software Engineer with 8 years of experience in designing and developing scalable applications, with a specialization in AI/ML integration. Strong expertise in system architecture, high-performance APIs, and building AI-powered applications that drive business intelligence. Proven hands-on experience in optimizing distributed systems, implementing microservices architecture, and leading teams to deliver measurable performance improvements across web and mobile platforms. Adept at building AI-driven data pipelines, improving system scalability, and driving innovation in cross-functional teams.
       </>
     ),
   },
@@ -113,58 +84,95 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
+        company: "Clipboard Health",
+        timeframe: "Sep 2021 - July 2025",
         role: "Senior Design Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed mobile applications supporting 50k+ active users, with integrated AI/ML models for predictive analytics and operational optimization.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Designed and implemented cloud-native microservices (.Net Core, Node.JS, Kubernetes), resulting in a 40% reduction in platform downtime.
+          </>,
+          <>
+            Designed and built AI-powered data pipelines, which automated data processing workflows, cutting manual tasks by 25% and improving predictive model accuracy.
+          </>,
+          <>
+            Optimized SQL/NoSQL database systems, boosting query performance by 35% and enabling real-time analytics for data-driven decision-making.
+          </>,
+          <>
+            Mentored junior engineers, fostering a culture of code quality and AI/ML best practices across the team.
+          </>,
+          <>
+            Increased feature delivery speed by 30% through agile methodologies, cross-functional collaboration, and continuous integration practices.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/Screenshot_1.png",
+            alt: "Clipboard Health",
+            width: 16,
+            height: 9,
+          },
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/Screenshot_2.png",
+            alt: "Clipboard Health",
+            width: 16,
+            height: 9,
+          },
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/Screenshot_3.png",
+            alt: "Clipboard Health",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Coldedge Technologies",
+        timeframe: "May 2018 - Aug 2021",
+        role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed full-stack solutions for multiple clients, contributing to the successful launch of 3 major platforms with integrated AI/ML solutions.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Supported cloud deployments and automated testing processes, which improved workflow efficiency by 15%.
+          </>,
+          <>
+            Contributed to the design and deployment of AI-based recommendation systems that personalized user experiences and increased engagement.
+          </>,
+          <>
+            Participated in Agile sprints, contributing to code reviews, technical documentation, and ensuring high-quality standards.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/Screenshot_4.png",
+            alt: "Flink",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/Screenshot_5.png",
+            alt: "GrubMarket",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "University of Yokohama",
         description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
@@ -173,61 +181,102 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Engineering",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            <strong>Front-End:</strong> React, Angular, TypeScript, JavaScript, HTML5, CSS3, Responsive UI
+            <br />
+            <strong>Back-End:</strong> .NET Core, Node.js, REST, GraphQL, Microservices
+            <br />
+            <strong>AI/ML:</strong> Python, TensorFlow, PyTorch, Scikit-Learn, Natural Language Processing (NLP),
+            Predictive Analytics
+            <br />
+            <strong>Cloud &amp; DevOps:</strong> AWS, Azure, GCP, Docker, Kubernetes, CI/CD, Automated Testing
+            <br />
+            <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis
+            <br />
+            <strong>Tools:</strong> Git, Jira, Terraform, Jenkins
+            <br />
+            <br />
+            <strong>Certificates:</strong>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/3f9f96f3f03b463cbf306d559234983b"
+              target="_blank"
+              rel="noreferrer"
+            >
+              React – TestDome
+            </a>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/d9f4f602aa364260a9e225e77141684e"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Node.js – TestDome
+            </a>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/d034ebe17f9444ff88d289f8ffecdd3e"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Python – TestDome
+            </a>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/a23ba825cb1f44dc83f69952b8c51865"
+              target="_blank"
+              rel="noreferrer"
+            >
+              C# – TestDome
+            </a>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/9bc8960e9f024e30bcb06dbb0dde79a4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Java – TestDome
+            </a>
+          </>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/Screenshot_10.png",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/Screenshot_6.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/Screenshot_7.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/Screenshot_8.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/Screenshot_9.png",
             alt: "Project image",
             width: 16,
             height: 9,
           },
         ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+      },      
     ],
   },
 };

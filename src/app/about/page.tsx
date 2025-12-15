@@ -94,19 +94,6 @@ export default function About() {
             horizontal="center"
           >
             <Avatar src={person.avatar} size="xl" />
-            <Row gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
-            </Row>
-            {person.languages && person.languages.length > 0 && (
-              <Row wrap gap="8">
-                {person.languages.map((language, index) => (
-                  <Tag key={index} size="l">
-                    {language}
-                  </Tag>
-                ))}
-              </Row>
-            )}
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
@@ -117,7 +104,8 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {about.calendar.display && (
+          {about.calendar.display && (
+            <a href={about.calendar.link} target="_blank" rel="noreferrer">
               <Row
                 fitWidth
                 border="brand-alpha-medium"
@@ -134,14 +122,10 @@ export default function About() {
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
                 <Row paddingX="8">Schedule a call</Row>
-                <IconButton
-                  href={about.calendar.link}
-                  data-border="rounded"
-                  variant="secondary"
-                  icon="chevronRight"
-                />
+                <Icon name="chevronRight" onBackground="brand-weak" />
               </Row>
-            )}
+            </a>
+          )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
