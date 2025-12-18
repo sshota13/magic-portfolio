@@ -86,7 +86,7 @@ const about: About = {
       {
         company: "Clipboard Health",
         timeframe: "Sep 2021 - July 2025",
-        role: "Senior Design Engineer",
+        role: "Senior Software Engineer",
         achievements: [
           <>
             Developed mobile applications supporting 50k+ active users, with integrated AI/ML models for predictive analytics and operational optimization.
