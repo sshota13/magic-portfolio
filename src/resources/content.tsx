@@ -92,7 +92,7 @@ const about: About = {
             Developed mobile applications supporting 50k+ active users, with integrated AI/ML models for predictive analytics and operational optimization.
           </>,
           <>
-            Designed and implemented cloud-native microservices (.Net Core, Node.JS, Kubernetes), resulting in a 40% reduction in platform downtime.
+            Designed and implemented cloud-native microservices (PHP/Laravel, .Net Core, Node.JS, Kubernetes), resulting in a 40% reduction in platform downtime.
           </>,
           <>
             Designed and built AI-powered data pipelines, which automated data processing workflows, cutting manual tasks by 25% and improving predictive model accuracy.
@@ -186,7 +186,7 @@ const about: About = {
           <>
             <strong>Front-End:</strong> React, Angular, TypeScript, JavaScript, HTML5, CSS3, Responsive UI
             <br />
-            <strong>Back-End:</strong> .NET Core, Node.js, REST, GraphQL, Microservices
+            <strong>Back-End:</strong> PHP/Laravel, .NET Core, Node.js, REST, GraphQL, Microservices
             <br />
             <strong>AI/ML:</strong> Python, TensorFlow, PyTorch, Scikit-Learn, Natural Language Processing (NLP),
             Predictive Analytics
@@ -206,6 +206,14 @@ const about: About = {
               rel="noreferrer"
             >
               React – TestDome
+            </a>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/614a5b73c53d40b099861963a9641778"
+              target="_blank"
+              rel="noreferrer"
+            >
+              PHP – TestDome
             </a>
             <br />
             <a
