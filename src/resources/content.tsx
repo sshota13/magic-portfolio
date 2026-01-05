@@ -89,7 +89,7 @@ const about: About = {
         role: "Senior Software Engineer",
         achievements: [
           <>
-            Developed mobile applications supporting 50k+ active users, with integrated AI/ML models for predictive analytics and operational optimization.
+            Developed full-stack applications supporting 500k+ active users, with integrated AI/ML models for predictive analytics and operational optimization.
           </>,
           <>
             Designed and implemented cloud-native microservices (PHP/Laravel, .Net Core, Node.JS, Kubernetes), resulting in a 40% reduction in platform downtime.
