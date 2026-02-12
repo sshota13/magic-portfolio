@@ -25,6 +25,12 @@ const social: Social = [
     link: `mailto:${person.email}`,
     essential: true,
   },
+  {
+    name: "Telegram",
+    icon: "telegram",
+    link: "https://t.me/danic527",
+    essential: true,
+  },
 ];
 
 const home: Home = {
@@ -92,7 +98,7 @@ const about: About = {
             Developed full-stack applications supporting 500k+ active users, with integrated AI/ML models for predictive analytics and operational optimization.
           </>,
           <>
-            Designed and implemented cloud-native microservices (PHP/Laravel, .Net Core, Node.JS, Kubernetes), resulting in a 40% reduction in platform downtime.
+            Designed and implemented cloud-native microservices (Go, PHP/Laravel, .Net Core, Node.JS, Kubernetes), resulting in a 40% reduction in platform downtime.
           </>,
           <>
             Designed and built AI-powered data pipelines, which automated data processing workflows, cutting manual tasks by 25% and improving predictive model accuracy.
@@ -186,7 +192,7 @@ const about: About = {
           <>
             <strong>Front-End:</strong> React, Angular, TypeScript, JavaScript, HTML5, CSS3, Responsive UI
             <br />
-            <strong>Back-End:</strong> PHP/Laravel, .NET Core, Node.js, REST, GraphQL, Microservices
+            <strong>Back-End:</strong> Go, PHP/Laravel, .NET Core, Node.js, REST, GraphQL, Microservices
             <br />
             <strong>AI/ML:</strong> Python, TensorFlow, PyTorch, Scikit-Learn, Natural Language Processing (NLP),
             Predictive Analytics
@@ -215,7 +221,7 @@ const about: About = {
             >
               PHP – TestDome
             </a>
-            <br />
+            <br />            
             <a
               href="https://www.testdome.com/certificates/d9f4f602aa364260a9e225e77141684e"
               target="_blank"
@@ -246,6 +252,14 @@ const about: About = {
               rel="noreferrer"
             >
               Java – TestDome
+            </a>
+            <br />
+            <a
+              href="https://www.testdome.com/certificates/4ecf24a6a0d04586937fc9248ba1e234"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Go – TestDome
             </a>
           </>
         ),

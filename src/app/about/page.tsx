@@ -14,6 +14,7 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import { EmailCopyBlock } from "@/components/about/EmailCopyBlock";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -178,6 +179,7 @@ export default function About() {
                 )}
               </Row>
             )}
+            <EmailCopyBlock email={person.email} />
           </Column>
 
           {about.intro.display && (
